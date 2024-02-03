@@ -5,16 +5,18 @@ const Body = (
   <div className="w-[8px] h-[80px] bg-black absolute top-[100px] right-[0px]"/>
 )
 const rightArm = (
-  <div className="w-[60px] h-[8px] bg-black absolute top-[130px] right-[-60px]"/>
+  <div className="w-[60px] h-[8px] bg-black absolute top-[130px] right-[-60px] rotate-[-40deg] origin-bottom-left"/>
 )
 const leftArm = (
-  <div className="w-[60px] h-[8px] bg-black absolute top-[130px] right-[8px] "/>
+  <div className="w-[60px] h-[8px] bg-black absolute top-[130px] right-[8px] rotate-[40deg] origin-bottom-right"/>
 )
 const rightLeg = (
-  <div className="w-[60px] h-[8px] bg-black absolute top-[172px] right-[-60px] "/>
+  <div className="w-[60px] h-[8px] bg-black absolute top-[172px] right-[-60px] rotate-[50deg]
+  origin-top-left"/>
 )
 const leftLeg = (
-  <div className="w-[60px] h-[8px] bg-black absolute top-[172px] right-[8px] "/>
+  <div className="w-[60px] h-[8px] bg-black absolute top-[172px] right-[8px] rotate-[-50deg]
+  origin-top-right"/>
 )
 
 const bodyParts = [Head, Body, rightArm, leftArm, leftLeg, rightLeg]
@@ -31,7 +33,6 @@ export default function HangmanDrawing({numberOfGuesses}: HangManDrawingProps) {
       <div className="h-[10px] w-[200px] bg-black ml-[120px]" />
       <div className="h-[350px] w-[10px] bg-black ml-[120px]" />
       <div className="h-[10px] w-[250px] bg-black" />
-
     </div>
   )
 }
