@@ -30,9 +30,9 @@ export default function HangmanDrawing({numberOfGuesses}: HangManDrawingProps) {
     <div className="relative">
       {bodyParts.slice(0, numberOfGuesses)}
       <div className="h-[50px] w-[10px] bg-black absolute top-0 right-0" />
-      <div className="h-[10px] w-[200px] bg-black ml-[120px]" />
-      <div className="h-[350px] w-[10px] bg-black ml-[120px]" />
-      <div className="h-[10px] w-[250px] bg-black" />
+      <div className="h-[10px] w-[150px] bg-black ml-[100px] md:ml-[120px]" />
+      <div className="h-[300px] md:h-[300px] w-[10px] bg-black ml-[100px] md:ml-[120px]" />
+      <div className="h-[8px] w-[190px] md:w-[250px] bg-black" />
     </div>
   )
 }

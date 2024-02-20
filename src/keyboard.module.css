@@ -2,10 +2,10 @@
     border: 3px solid black;
     border-radius: 4px;
     background: none;
-    aspect-ratio: 1 / 1;
-    font-size: 2rem;
+    /* aspect-ratio: 1 / 1; */
+    font-size: 1.5rem;
     text-transform: uppercase;
-    padding: 2px;
+    padding: 1.5px;
     font-weight: bold;
     cursor: pointer;
     color: black;
@@ -17,10 +17,20 @@
   }
   
   .btn.inactive {
-    opacity: .3;
+    opacity: 0.3;
   }
   
   .btn:hover:not(:disabled),
   .btn:focus:not(:disabled) {
     background-color: orange;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .btn{
+      font-size: 1.5rem;
+      padding: 1px;
+      border: 2px solid black;
+      border-radius: 2px;
+      font-weight: semi-bold;
+    }
   }

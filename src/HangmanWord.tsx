@@ -6,7 +6,7 @@ type HangManWordProps = {
 
 export default function HangmanWord({guessedLetters, wordToGuess, reveal= false}: HangManWordProps) {
   return (
-    <div className="flex font-semibold font-serif gap-4 text-6xl uppercase">
+    <div className="flex font-semibold font-serif gap-2 sm:gap-3 md:gap-4 text-3xl md:text-6xl uppercase">
       {wordToGuess.split("").map((letter, index) => (
             <span className="border-b-4 border-black " key={index}>
               <span style={{visibility: guessedLetters.includes(letter) || reveal ? "visible": "hidden", 
