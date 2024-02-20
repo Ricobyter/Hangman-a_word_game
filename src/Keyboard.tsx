@@ -46,9 +46,10 @@ export function Keyboard({
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(75px, 1fr))",
+        // gridTemplateColumns: "grid-cols-[repeat(auto-fit,_16.666666%)]",
         gap: ".5rem",
       }}
+      className="grid-cols-[repeat(auto-fit,_10.0%)] justify-center justify-self-center"
     >
       {KEYS.map(key => {
         const isActive = activeLetters.includes(key)

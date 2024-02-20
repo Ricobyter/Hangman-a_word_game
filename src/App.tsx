@@ -8,6 +8,7 @@ function App() {
 
 const [wordToGuess, setWordToGuess] = useState(() => {
 return words[Math.floor(Math.random() * words.length)]
+setWordToGuess(''); // This line is unreachable
 });
 
 const [guessedLetters, setGuessedLetters] = useState<string[]>([])
@@ -52,6 +53,7 @@ useEffect(() => {
   <div className="flex items-center justify-center max-w-[800px] flex-col gap-8 mx-0 my-auto">
 <div className="text-3xl text-center">
   <span className="text-green-400 font-serif font-medium">{isWinner && "You Won. Refresh to try again"} </span>
+  
   <span className="text-red-700 font-serif font-medium">{isLoser && "Oops! It seems that you lost. Refresh to try again"} </span>
   {/* <button onClick={refresh}>Try again</button> */}
   
