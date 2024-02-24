@@ -1,31 +1,32 @@
-# React + TypeScript + Vite
+# Hangman Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hangman is a classic word guessing game where players attempt to guess a hidden word one letter at a time. With each incorrect guess, a part of the hangman is drawn on the screen. The goal is to guess the word correctly before the hangman is fully drawn.
 
-Currently, two official plugins are available:
+## Introduction
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This Hangman game is a fun and interactive way to test your vocabulary and guessing skills. It's built using React and styled with Tailwind CSS to provide a modern and responsive user interface.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Guess letters to uncover the hidden word.
+- Visual representation of the hangman as incorrect guesses are made.
+- Responsive design using Tailwind CSS for styling.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- React
+- Tailwind CSS
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# Hangman-a_word_game
+
+## How to Play
+
+1. The hidden word will be displayed as a series of dashes representing each letter.
+
+2. Guess letters by clicking on them or typing them using the keyboard.
+
+3. If the guessed letter is in the word, it will be revealed in its correct position(s).
+
+4. If the guessed letter is not in the word, a part of the hangman will be drawn.
+
+5. Keep guessing letters until you either solve the word or the hangman is fully drawn.
+
